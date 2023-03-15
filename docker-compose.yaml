@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  watcher:
+    build:
+      context: .
+    image: watcher
+    container_name: watcher
+    ports:
+      - 3000:3000
+    environment:
+      - APP_NAME=watcher
